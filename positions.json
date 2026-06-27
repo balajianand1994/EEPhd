@@ -1,35 +1,13 @@
 [
   {
     "title": "PhD in Power Electronics for Grid-Scale Storage",
-    "institution": "ETH Zürich",
-    "country": "Switzerland",
-    "city": "Zürich",
-    "subfield": "Power Electronics",
-    "deadline": "2026-08-15",
-    "funding": "Fully funded",
-    "link": "https://example.com/eth-power-electronics",
-    "added": "2026-06-26"
-  },
-  {
-    "title": "PhD Position in RF & Microwave Circuit Design",
-    "institution": "TU Delft",
+    "institution": "TU Eindhoven",
     "country": "Netherlands",
-    "city": "Delft",
-    "subfield": "RF / Microwave",
-    "deadline": "2026-07-30",
-    "funding": "Fully funded",
-    "link": "https://example.com/tudelft-rf",
-    "added": "2026-06-24"
-  },
-  {
-    "title": "Doctoral Researcher in Control Systems & Robotics",
-    "institution": "KTH Royal Institute of Technology",
-    "country": "Sweden",
-    "city": "Stockholm",
-    "subfield": "Control Systems",
-    "deadline": "2026-09-01",
-    "funding": "Fully funded",
-    "link": "https://example.com/kth-control",
-    "added": "2026-06-20"
+    "city": "Eindhoven",
+    "subfield": "",
+    "deadline": "",
+    "funding": "",
+    "link": "https://tue.varbi.com/en/what:job/jobID:946057/",
+    "added": ""
   }
 ]
