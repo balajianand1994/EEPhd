@@ -233,11 +233,18 @@ fetch('positions.json?_='+Date.now())
     DATA=d;
     fillSelect('country','country');
     fillSelect('subfield','subfield');
-    const latest = DATA.map(p=>p.added).filter(Boolean).sort().pop();
-    document.getElementById('updated').textContent = latest? 'Last updated '+fmtDate(latest):'';
     render();
   })
   .catch(()=>{LIST.innerHTML='<div class="err">Could not load positions.json. Check the file is valid JSON.</div>';});
+
+// ---- Last updated = date of the most recent commit to the repo ----
+fetch('https://api.github.com/repos/balajianand1994/Flux/commits?per_page=1')
+  .then(r=>{if(!r.ok)throw 0;return r.json();})
+  .then(commits=>{
+    const date = commits?.[0]?.commit?.committer?.date;
+    if(date) document.getElementById('updated').textContent = 'Last updated '+fmtDate(date);
+  })
+  .catch(()=>{ /* leave blank if the API is unreachable */ });
 </script>
 
 <!-- ============================================================= -->
