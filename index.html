@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voltage — PhD Vacancies in Electrical Engineering across Europe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0a0e14;
+    --paper:#f6f4ef;
+    --line:#1a1f2b;
+    --volt:#d6ff3f;       /* signal yellow-green */
+    --volt-deep:#0e3a2f;
+    --muted:#5b6472;
+    --card:#ffffff;
+    --shadow:rgba(10,14,20,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Space Grotesk",system-ui,sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+
+  /* ---- Masthead ---- */
+  header{
+    border-bottom:2px solid var(--line);
+    padding:28px 24px 22px;
+    display:flex;align-items:flex-end;justify-content:space-between;
+    flex-wrap:wrap;gap:16px;
+    max-width:1100px;margin:0 auto;
+  }
+  .brand{display:flex;align-items:baseline;gap:14px}
+  .mark{
+    font-family:"IBM Plex Mono",monospace;
+    font-weight:500;font-size:13px;letter-spacing:.18em;
+    background:var(--volt);padding:4px 9px;border:1.5px solid var(--line);
+    text-transform:uppercase;
+  }
+  h1{
+    font-family:"Newsreader",serif;
+    font-weight:500;font-size:clamp(30px,5vw,46px);
+    line-height:1;letter-spacing:-.01em;
+  }
+  .tag{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:12px;color:var(--muted);max-width:340px;text-align:right;
+  }
+
+  /* ---- Controls ---- */
+  .bar{
+    max-width:1100px;margin:0 auto;
+    padding:18px 24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;
+    border-bottom:1px solid var(--line);
+  }
+  .count{
+    font-family:"IBM Plex Mono",monospace;font-size:13px;
+    border:1.5px solid var(--line);padding:6px 11px;background:var(--ink);color:var(--paper);
+  }
+  select,input{
+    font-family:"IBM Plex Mono",monospace;font-size:13px;
+    border:1.5px solid var(--line);background:var(--card);
+    padding:7px 11px;cursor:pointer;color:var(--ink);
+  }
+  input{cursor:text;min-width:200px;flex:1}
+
+  /* ---- List ---- */
+  main{max-width:1100px;margin:0 auto;padding:8px 24px 80px}
+  .pos{
+    border:1.5px solid var(--line);background:var(--card);
+    margin-top:18px;padding:22px 24px;
+    display:grid;grid-template-columns:38px 1fr auto;gap:20px;align-items:start;
+    box-shadow:5px 5px 0 var(--shadow);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .pos:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--shadow)}
+  .idx{
+    font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--muted);
+    padding-top:4px;
+  }
+  .body .field{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--volt-deep);
+    background:var(--volt);display:inline-block;padding:2px 7px;margin-bottom:9px;
+    border:1px solid var(--line);
+  }
+  .body h2{
+    font-family:"Newsreader",serif;font-weight:500;font-size:21px;line-height:1.25;
+    margin-bottom:8px;
+  }
+  .meta{
+    font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--muted);
+    display:flex;flex-wrap:wrap;gap:6px 16px;
+  }
+  .meta b{color:var(--ink);font-weight:500}
+  .right{display:flex;flex-direction:column;align-items:flex-end;gap:10px;text-align:right}
+  .dl{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted)}
+  .dl.soon{color:#b4231b}
+  .apply{
+    font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:14px;
+    text-decoration:none;border:1.5px solid var(--line);background:var(--ink);
+    color:var(--paper);padding:9px 16px;white-space:nowrap;
+    transition:background .12s,color .12s;
+  }
+  .apply:hover{background:var(--volt);color:var(--ink)}
+
+  .empty,.err{
+    font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--muted);
+    padding:48px 0;text-align:center;
+  }
+  footer{
+    border-top:2px solid var(--line);max-width:1100px;margin:0 auto;
+    padding:22px 24px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+  @media(max-width:640px){
+    .pos{grid-template-columns:1fr}
+    .idx{display:none}
+    .right{align-items:flex-start;text-align:left}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <span class="mark">EE · EU</span>
+    <h1>Voltage</h1>
+  </div>
+  <p class="tag">A hand-picked board of doctoral positions in electrical engineering, across Europe. Nothing else.</p>
+</header>
+
+<div class="bar">
+  <span class="count" id="count">— positions</span>
+  <select id="country"><option value="">All countries</option></select>
+  <select id="subfield"><option value="">All subfields</option></select>
+  <select id="sort">
+    <option value="added">Newest first</option>
+    <option value="deadline">Deadline soonest</option>
+  </select>
+  <input id="search" placeholder="search title / institution…">
+</div>
+
+<main id="list"><div class="empty">Loading positions…</div></main>
+
+<footer>
+  <span>Voltage · curated manually</span>
+  <span id="updated"></span>
+</footer>
+
+<script>
+const LIST = document.getElementById('list');
+let DATA = [];
+
+function fmtDate(s){
+  if(!s) return '—';
+  const d = new Date(s);
+  return d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});
+}
+function daysLeft(s){
+  if(!s) return null;
+  return Math.ceil((new Date(s) - new Date()) / 86400000);
+}
+
+function fillSelect(id, key){
+  const sel = document.getElementById(id);
+  const vals = [...new Set(DATA.map(p=>p[key]).filter(Boolean))].sort();
+  vals.forEach(v=>{
+    const o=document.createElement('option');o.value=v;o.textContent=v;sel.appendChild(o);
+  });
+}
+
+function render(){
+  const c=document.getElementById('country').value;
+  const f=document.getElementById('subfield').value;
+  const q=document.getElementById('search').value.toLowerCase().trim();
+  const sort=document.getElementById('sort').value;
+
+  let rows = DATA.filter(p=>
+    (!c||p.country===c) && (!f||p.subfield===f) &&
+    (!q || (p.title+p.institution+p.city).toLowerCase().includes(q))
+  );
+
+  rows.sort((a,b)=> sort==='deadline'
+    ? new Date(a.deadline||'2999') - new Date(b.deadline||'2999')
+    : new Date(b.added||0) - new Date(a.added||0));
+
+  document.getElementById('count').textContent =
+    rows.length + (rows.length===1?' position':' positions');
+
+  if(!rows.length){LIST.innerHTML='<div class="empty">No positions match these filters.</div>';return;}
+
+  LIST.innerHTML = rows.map((p,i)=>{
+    const dl = daysLeft(p.deadline);
+    const soon = dl!==null && dl<=14 ? ' soon':'';
+    const dlTxt = dl!==null
+      ? `Deadline ${fmtDate(p.deadline)}${dl>=0?` · ${dl}d left`:' · closed'}`
+      : 'Deadline open';
+    return `
+    <article class="pos">
+      <div class="idx">${String(i+1).padStart(2,'0')}</div>
+      <div class="body">
+        <span class="field">${p.subfield||'Electrical Eng.'}</span>
+        <h2>${p.title}</h2>
+        <div class="meta">
+          <span><b>${p.institution}</b></span>
+          <span>${p.city?p.city+', ':''}${p.country}</span>
+          <span>${p.funding||''}</span>
+        </div>
+      </div>
+      <div class="right">
+        <span class="dl${soon}">${dlTxt}</span>
+        <a class="apply" href="${p.link}" target="_blank" rel="noopener">View &amp; apply →</a>
+      </div>
+    </article>`;
+  }).join('');
+}
+
+['country','subfield','sort','search'].forEach(id=>{
+  document.getElementById(id).addEventListener('input',render);
+});
+
+fetch('positions.json?_='+Date.now())
+  .then(r=>{if(!r.ok)throw 0;return r.json();})
+  .then(d=>{
+    DATA=d;
+    fillSelect('country','country');
+    fillSelect('subfield','subfield');
+    const latest = DATA.map(p=>p.added).filter(Boolean).sort().pop();
+    document.getElementById('updated').textContent = latest? 'Last updated '+fmtDate(latest):'';
+    render();
+  })
+  .catch(()=>{LIST.innerHTML='<div class="err">Could not load positions.json. Check the file is valid JSON.</div>';});
+</script>
+</body>
+</html>
