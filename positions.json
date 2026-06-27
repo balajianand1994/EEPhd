@@ -1,13 +1,25 @@
 [
   {
-    "title": "PhD in Power Electronics for Grid-Scale Storage",
+    "title": "PhD in Humanoid Robot design",
     "institution": "TU Eindhoven",
     "country": "Netherlands",
     "city": "Eindhoven",
-    "subfield": "",
+    "subfield": "Robotics",
     "deadline": "11.Jul.2026",
-    "funding": "",
+    "funding": "Funded",
     "link": "https://tue.varbi.com/en/what:job/jobID:946057/",
     "added": "11.Jun.2026"
-  }
+  },
+  {
+    "title": "PhD in Networked Systems Security",
+    "institution": "KTH",
+    "country": "Sweden",
+    "city": "Stockholm",
+    "subfield": "Electrical Engineering",
+    "deadline": "23.Aug.2026",
+    "funding": "Funded",
+    "link": "https://www.kth.se/lediga-jobb/939588?l=en",
+    "added": "09.Jun.2026"
+  },
+  
 ]
