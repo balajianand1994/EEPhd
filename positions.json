@@ -42,5 +42,38 @@
     "funding": "Funded",
     "link": "https://www.tue.nl/en/working-at-tue/vacancy-overview/phd-in-ai-driven-fair-energy-curtailment-policies",
     "added": ""
-  }
+  },
+  {
+    "title": "PhD in mathematical foundations of uncertainty quantification in deep learning",
+    "institution": "Uppsala University",
+    "country": "Sweden",
+    "city": "Uppsala",
+    "subfield": "Machine learning",
+    "deadline": "2026-07-31",
+    "funding": "Funded",
+    "link": "https://www.uu.se/en/about-uu/join-us/jobs-and-vacancies/job-details?query=943164",
+    "added": ""
+  },
+  {
+    "title": "PhD in machine learning for cancer research",
+    "institution": "Uppsala University",
+    "country": "Sweden",
+    "city": "Uppsala",
+    "subfield": "Machine learning",
+    "deadline": "2026-08-16",
+    "funding": "Funded",
+    "link": "https://www.uu.se/en/about-uu/join-us/jobs-and-vacancies/job-details?query=935585",
+    "added": ""
+  },
+  {
+    "title": "PhD in machine learning",
+    "institution": "Lund University",
+    "country": "Sweden",
+    "city": "Lund",
+    "subfield": "Machine learning",
+    "deadline": "2026-07-14",
+    "funding": "Funded",
+    "link": "https://lu.varbi.com/en/what:job/jobID:937569/type:job/where:4/apply:1",
+    "added": ""
+  }  
 ]
