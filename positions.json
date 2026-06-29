@@ -75,5 +75,38 @@
     "funding": "Funded",
     "link": "https://lu.varbi.com/en/what:job/jobID:937569/type:job/where:4/apply:1",
     "added": ""
-  }  
+  },
+  {
+    "title": "PhD in AI Security",
+    "institution": "Linkoping University",
+    "country": "Sweden",
+    "city": "Linkoping",
+    "subfield": "Machine learning",
+    "deadline": "2026-07-31",
+    "funding": "Funded",
+    "link": "https://liu.se/en/work-at-liu/vacancies/29341",
+    "added": ""
+  },
+  {
+    "title": "PhD in AI-based Flow Control for Hydropower",
+    "institution": "Linkoping University",
+    "country": "Sweden",
+    "city": "Linkoping",
+    "subfield": "Machine learning",
+    "deadline": "2026-08-31",
+    "funding": "Funded",
+    "link": "https://liu.se/en/work-at-liu/vacancies/29533",
+    "added": ""
+  },
+  {
+    "title": "PhD in AI-Based Groundwater Modelling and Decision Support",
+    "institution": "Chalmers University",
+    "country": "Sweden",
+    "city": "Gothenburg",
+    "subfield": "Machine learning",
+    "deadline": "2026-08-07",
+    "funding": "Funded",
+    "link": "https://www.chalmers.se/en/about-chalmers/work-with-us/",
+    "added": ""
+  }
 ]
